@@ -1,12 +1,12 @@
 import React from 'react';
-import HpLogo from '../assets/images/hp.png';
-import DashboardIcon from '../assets/images/dashboard.svg';
-import JobsIcon from '../assets/images/jobs.svg';
-import ApplicationIcon from '../assets/images/profiles.svg';
-import FollowersIcon from '../assets/images/followers.svg';
-import EnterpriseIcon from '../assets/images/enterprise.svg';
-import CollaborationIcon from '../assets/images/collaboration.svg';
-import ConversationIcon from '../assets/images/conversation.svg';
+import HpLogo from '/images/hp.png';
+import DashboardIcon from '/images/dashboard.svg';
+import JobsIcon from '/images/jobs.svg';
+import ApplicationIcon from '/images/profiles.svg';
+import FollowersIcon from '/images/followers.svg';
+import EnterpriseIcon from '/images/enterprise.svg';
+import CollaborationIcon from '/images/collaboration.svg';
+import ConversationIcon from '/images/conversation.svg';
 
 const MENU_ITEMS = [
   {

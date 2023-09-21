@@ -1,5 +1,5 @@
-import Logo from '../assets/images/Logo.png';
-import ForeverIcon from '../assets/images/Forever.png';
+import Logo from '/images/logo.png';
+import ForeverIcon from '/images/forever.png';
 
 const Header = ({ toggleSidebar }) => {
     return (

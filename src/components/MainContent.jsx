@@ -1,7 +1,7 @@
 import React from 'react';
-import LeftArrowIcon from '../assets/images/left-arrow.svg';
-import EditIcon from '../assets/images/edit.svg';
-import ProfileImage from '../assets/images/profile.png';
+import LeftArrowIcon from '/images/left-arrow.svg';
+import EditIcon from '/images/edit.svg';
+import ProfileImage from '/images/profile.png';
 
 const MainContent = ({isSidebarVisible}) => {
   return (
