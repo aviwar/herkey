@@ -1,11 +1,11 @@
 import React from 'react';
 import LeftArrowIcon from '../assets/images/left-arrow.svg';
 import EditIcon from '../assets/images/edit.svg';
-import ProfileImage from '../assets/images/Profile.png';
+import ProfileImage from '../assets/images/profile.png';
 
-const MainContent = () => {
+const MainContent = ({isSidebarVisible}) => {
   return (
-    <main className="flex-1 p-4 ml-0 md:ml-60 md:mt-0 mt-8 border border-gray-100">
+    <main className={`flex-1 p-4 ml-0 md:ml-${isSidebarVisible ? '60' : '0'} md:mt-0 mt-2`}>
       {/* Breadcrumb (Desktop only) */}
       <nav className="mb-4 hidden md:block">
         <ol className="flex space-x-2 text-xs">

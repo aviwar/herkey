@@ -1,7 +1,7 @@
 import Logo from '../assets/images/Logo.png';
 import ForeverIcon from '../assets/images/Forever.png';
 
-const Header = () => {
+const Header = ({ toggleSidebar }) => {
     return (
         <header className="sticky top-0 bg-white shadow-md py-4 px-6 text-black z-10">
             {/* Mobile Header */}
@@ -41,12 +41,12 @@ const Header = () => {
                         className="h-8 w-auto"
                     />
                     <svg
+                        onClick={toggleSidebar}
                         xmlns="http://www.w3.org/2000/svg"
+                        className="h-6 w-6 cursor-pointer"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
-                        width="24"
-                        height="24"
                     >
                         <path
                             strokeLinecap="round"
