@@ -23,7 +23,10 @@ const Header = ({ toggleSidebar }) => {
                 <img
                     src={Logo}
                     alt="Logo"
+                    loading='lazy'
                     className="h-8 w-auto"
+                    width={98}
+                    height={26}
                 />
                 <img
                     src={ForeverIcon}
@@ -38,7 +41,10 @@ const Header = ({ toggleSidebar }) => {
                     <img
                         src={Logo}
                         alt="Logo"
+                        loading='lazy'
                         className="h-8 w-auto"
+                        width={130}
+                        height={35}
                     />
                     <svg
                         onClick={toggleSidebar}

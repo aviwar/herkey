@@ -30,7 +30,7 @@ export default {
 
       },
       fontFamily: {
-        sans: ['Open Sans', 'sans']
+        body: ['"Open Sans"']
       }
     },
   },

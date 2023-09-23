@@ -3,7 +3,7 @@ import LeftArrowIcon from '/images/left-arrow.svg';
 import EditIcon from '/images/edit.svg';
 import ProfileImage from '/images/profile.png';
 
-const MainContent = ({isSidebarVisible}) => {
+const MainContent = ({ isSidebarVisible }) => {
   return (
     <main className={`flex-1 p-4 ml-0 md:ml-${isSidebarVisible ? '60' : '0'} md:mt-0 mt-2`}>
       {/* Breadcrumb (Desktop only) */}
@@ -40,7 +40,7 @@ const MainContent = ({isSidebarVisible}) => {
               <div className="flex items-center mb-4">
                 <div className="relative h-[76px] w-[76px] md:h-[118px] md:w-[118px] mr-4">
                   <div className="rounded-full overflow-hidden border border-gray-800 h-[76px] w-[76px] md:h-[118px] md:w-[118px]">
-                    <img src={ProfileImage} alt="Profile Pic" className="object-cover" />
+                    <img src={ProfileImage} alt="Profile Pic" className="object-cover" height={118} width={118} />
                   </div>
 
                   <div className="absolute right-0 bottom-0 p-2 border bg-white rounded-full cursor-pointer">
@@ -68,7 +68,6 @@ const MainContent = ({isSidebarVisible}) => {
               </div>
             </div>
           </div>
-
 
           <div className="md:flex md:space-x-4">
             <div className="md:w-1/2 mb-4">
@@ -147,12 +146,12 @@ const MainContent = ({isSidebarVisible}) => {
                 <p className="text-gray-400 mb-2">Receive job applications via</p>
 
                 <label className="flex items-center space-x-2 mb-2">
-                  <input id='dashboard-only' type="radio" name='notification' className="form-radio text-green border-green focus:ring-green" checked />
+                  <input id='dashboard-only' type="radio" name='notification' className="form-radio text-green border-green focus:ring-green" checked readOnly />
                   <label htmlFor="dashboard-only" className='text-black-100'>Only on my dashboard</label>
                 </label>
 
                 <label className="flex items-center space-x-2 mb-4">
-                  <input id='email-dashboard' type="radio" name='notification' className="form-radio text-green border-green focus:ring-green" />
+                  <input id='email-dashboard' type="radio" name='notification' className="form-radio text-green border-green focus:ring-green" readOnly />
                   <label htmlFor="email-dashboard" className='text-black-100'>Email and on my dashboard</label>
                 </label>
 
